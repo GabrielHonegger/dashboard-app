@@ -8,15 +8,14 @@ import { ContextProvider } from './contexts/ContextProvider.jsx'
 import { registerLicense } from '@syncfusion/ej2-base'
 
 
-registerLicense('Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCeUx0WmFZfVpgdVVMY15bRHBPMyBoS35RckVlW3pfcHdXRmZdVUZ+');
+registerLicense('ORg4AjUWIQA/Gnt2U1hhQlJBfV5AQmBIYVp/TGpJfl96cVxMZVVBJAtUQF1hTX5VdENiWXtWdHVSR2Jb');
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ContextProvider>
     <React.StrictMode>
-      <App />
+      <ContextProvider>
+        <App />
+      </ContextProvider>
     </React.StrictMode>,
-  </ContextProvider>
-  
 )
