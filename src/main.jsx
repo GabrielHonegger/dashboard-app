@@ -5,7 +5,7 @@ import './index.css'
 
 import { ContextProvider } from './contexts/ContextProvider.jsx'
 
-import { registerLicense } from '@syncfusion/ej2-base'
+import {NextUIProvider} from '@nextui-org/react'
 
 
 registerLicense('ORg4AjUWIQA/Gnt2U1hhQlJBfV5AQmBIYVp/TGpJfl96cVxMZVVBJAtUQF1hTX5VdENiWXtWdHVSR2Jb');
@@ -14,8 +14,10 @@ registerLicense('ORg4AjUWIQA/Gnt2U1hhQlJBfV5AQmBIYVp/TGpJfl96cVxMZVVBJAtUQF1hTX5
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-      <ContextProvider>
-        <App />
-      </ContextProvider>
+      <NextUIProvider>
+        <ContextProvider>
+          <App />
+        </ContextProvider>
+      </NextUIProvider>
     </React.StrictMode>,
 )
